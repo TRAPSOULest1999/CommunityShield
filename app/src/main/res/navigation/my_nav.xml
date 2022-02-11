@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/alertFragment">
+
+    <fragment
+        android:id="@+id/alertFragment"
+        android:name="com.example.communityshield.AlertFragment"
+        android:label="fragment_alert"
+        tools:layout="@layout/fragment_alert" />
+    <fragment
+        android:id="@+id/wantedFragment"
+        android:name="com.example.communityshield.WantedFragment"
+        android:label="fragment_wanted"
+        tools:layout="@layout/fragment_wanted" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.communityshield.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.communityshield.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.communityshield.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+</navigation>

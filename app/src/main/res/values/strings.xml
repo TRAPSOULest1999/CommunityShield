@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Community Shield</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="reportType">
+        <item>EMERGENCY</item>
+        <item>NON-EMERGENCY</item>
+    </string-array>
+</resources>

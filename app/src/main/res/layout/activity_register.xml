@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context=".RegisterActivity"
+    android:background="@color/mirage">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="123dp"
+        android:layout_height="117dp"
+        android:src="@drawable/ic_name"
+        app:civ_border_color="@color/pesto"
+        app:civ_border_width="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_reg_email"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_email" />
+
+        <EditText
+        android:id="@+id/editTextUserRegEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:backgroundTint="@color/pesto"
+        android:textColorHint="@color/pesto"
+            android:textColor="@color/pesto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+    <ImageView
+        android:id="@+id/image_reg_password"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_password_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" "
+            app:hintTextColor="@color/pesto"
+            app:passwordToggleTint="@color/pesto"
+            app:passwordToggleEnabled="true">
+
+        <EditText
+        android:id="@+id/editTextUserRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:backgroundTint="@color/pesto"
+            android:textColor="@color/pesto"
+        android:textColorHint="@color/pesto" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butn_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/alt_btn_background_color"
+        android:text="REGISTER"
+        android:textColor="@color/alt_btn_text_color"/>
+
+
+</LinearLayout>
+
+

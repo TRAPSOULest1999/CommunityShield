@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Alert"
+        android:icon="@drawable/ic_alert"
+        android:id="@+id/alertFragment"
+        android:iconTint="@color/mirage"
+        />
+
+    <item android:title="Wanted"
+        android:icon="@drawable/ic_criminal"
+        android:id="@+id/wantedFragment"
+        android:iconTint="@color/mirage"
+        />
+
+    <item android:title="Report"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/reportFragment"
+        android:iconTint="@color/mirage"
+        />
+
+    <item android:title="News"
+        android:icon="@drawable/ic_news"
+        android:id="@+id/newsFragment"
+        android:iconTint="@color/mirage"
+        />
+
+    <item android:title="Chat"
+        android:icon="@drawable/ic_chat"
+        android:id="@+id/chatFragment"
+        android:iconTint="@color/mirage"
+        />
+</menu>

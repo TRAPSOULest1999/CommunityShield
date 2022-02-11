@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="isData"
+            type="com.example.communityshield.model.NewsData" />
+    </data>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:background="@color/mirage"
+    tools:context=".view.NewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_marginTop="30dp"
+                android:imageUrl="@{isData.img}"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"/>
+            <View
+                android:background="@color/mirage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/heading"
+                android:text="@{isData.heading}"
+                android:gravity="center"
+                android:textStyle="bold|normal"
+                android:textSize="22sp"
+                android:elevation="15dp"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/sycamore"
+                android:textColor="@color/mirage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/mirage"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/info"
+                android:text="@{isData.info}"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:background="@color/pesto"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/pigeon_post"
+                android:textStyle="bold|normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+
+</layout>

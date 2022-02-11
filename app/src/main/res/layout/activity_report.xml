@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".ReportActivity"
+    android:background="@color/mirage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtReportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Report"
+            android:textAlignment="center"
+            android:textColor="@color/pesto"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="0dp">
+    <LinearLayout
+        android:layout_width="69dp"
+        android:layout_height="81dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageRepMenu"
+            android:layout_width="66dp"
+            android:layout_height="55dp"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/txtRepMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:textAlignment="center"
+            android:textColor="@color/pesto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <ImageView
+        android:id="@+id/imageLog"
+        android:layout_width="wrap_content"
+            android:layout_marginLeft="180dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/location"
+        android:textColor="@color/pesto"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/radioGroupR"
+        android:background="@color/pesto"
+        android:elegantTextHeight="true"
+        android:text="Urgency Level ?"
+        android:textAlignment="center"
+        android:textColor="@color/mirage"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupR"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="30dp">
+        <RadioButton
+            android:id="@+id/radioButton_Emergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:background="@color/pesto"
+            android:buttonTint="@color/mirage"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="EMERGENCY"
+            android:textColor="@color/mirage"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_NonEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:background="@color/pesto"
+            android:buttonTint="@color/mirage"
+            android:minHeight="48dp"
+            android:text="NON-EMERGENCY"
+            android:textColor="@color/mirage"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/alt_btn_background_color"
+        android:text="10 111"
+        android:textColor="@color/alt_btn_text_color"
+        android:textSize="25sp"/>
+
+</LinearLayout>

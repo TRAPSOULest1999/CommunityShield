@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "367640625687",
+    "project_id": "communityshield",
+    "storage_bucket": "communityshield.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367640625687:android:7d91b1397ff1cc04ead252",
+        "android_client_info": {
+          "package_name": "com.example.communityshield"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367640625687-e7evifb31pohqofp28hmuh4aoee1kajr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDP8bkb7ktcV0a5jjVdEoSzN4RNyDuiaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367640625687-e7evifb31pohqofp28hmuh4aoee1kajr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
